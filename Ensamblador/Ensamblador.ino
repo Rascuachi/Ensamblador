@@ -173,9 +173,11 @@ void loop() {
     digitalWrite(decimal, HIGH);
     delay(2000);
     digitalWrite(decimal, LOW);    
-    x_3=1;
+    x_0=1;
+    x_1=1;
   } else {
-    x_3=0;
+    x_0=0;
+    x_1=0;    
   }
    
     numeros(x_0, x_1, x_2, x_3);
@@ -187,7 +189,7 @@ void loop() {
     }else{
       x_0=0;      
     }
-  
+    numeros(x_0, x_1, x_2, x_3);
   }else if(OR){
   
     if(A||B||C||D){
@@ -195,7 +197,7 @@ void loop() {
     }else{
       x_0=0;
     }
-    
+    numeros(x_0, x_1, x_2, x_3);
   }else if(XOR){
   
     if((A^B)^(C^D)){
@@ -203,7 +205,7 @@ void loop() {
     }else{
       x_0=0;
     }
-    
+    numeros(x_0, x_1, x_2, x_3);
   }else {
   	!E;
     !F;
